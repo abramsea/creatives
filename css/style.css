@@ -792,8 +792,17 @@ body {
         margin: 100px 30px 0 0;
     }
 
+    .main_phone .wrapper {
+        margin-left: -50px;
+    }
+
+    .iphone {
+        padding: 50px;
+        margin-left: 50px;
+    }
+
     .team_badge {
-        left: 20px;
+        left: 30px;
     }
 
     .footer {
