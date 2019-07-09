@@ -16,21 +16,6 @@ li {
     src: url(../fonts/myriadpro/MYRIADPRO-REGULAR.OTF);
 }
 
-@font-face {
-    font-family: gothamBold;
-    src: url(../fonts/gotham/Gotham-Bold.otf)
-}
-
-@font-face {
-    font-family: gothamMedium;
-    src: url(../fonts/gotham/GothamMedium.ttf)
-}
-
-@font-face {
-    font-family: gothamLight;
-    src: url(../fonts/gotham/GothamLight.ttf)
-}
-
 
 /* --------------------- */
 
@@ -89,14 +74,7 @@ body {
     padding: 0;
     width: 100%;
 }
-/*
-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 
-*/
 
 .main_welcome {
     padding: 275px 0 110px 0;
@@ -105,17 +83,19 @@ main {
 
 .main_welcome h1 {
     color: white;
-    font-family: gothamBold, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 152px;
     letter-spacing: -4px;
 }
 
 .blue {
     color: #11749e;
-    font-family: 'gothamMedium', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     font-size: 25px;
     letter-spacing: 12px;
-    margin-top: 38px;
+    margin-top: 1px;
 }
 
 .scroll {
@@ -147,13 +127,14 @@ main {
 }
 
 .caption {
-    font-family: 'gothamMedium', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 38px;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
 .main_features .caption {
-    margin-top: -143px;
+    margin-top: -177px;
     color: #fff;
 }
 
@@ -187,7 +168,7 @@ main {
 
 .feature_name {
     text-transform: uppercase;
-    font-family: 'gothamMedium', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     margin-bottom: 34px;
 }
@@ -214,7 +195,7 @@ main {
 }
 
 .news_caption {
-    font-family: 'gothamMedium', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
 }
 
@@ -258,7 +239,7 @@ main {
 }
 
 .main_blog .caption {
-    margin-top: -136px;
+    margin-top: -175px;
 }
 
 .about {
@@ -277,7 +258,7 @@ main {
 
 .blog_name {
     text-transform: uppercase;
-    font-family: 'gothamMedium', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     padding-top: 55px;
     margin-bottom: 34px;
@@ -318,6 +299,7 @@ main {
 
 .main_phone {
     background: url(../img/bg2.jpg) no-repeat;
+    background-size: cover;
     color: #fff;
     padding-bottom: 100px;
 }
@@ -332,7 +314,7 @@ main {
 }
 
 .phone_caption {
-    font-family: 'gothamMedium', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     padding-top: 240px;
 }
@@ -344,10 +326,10 @@ main {
 }
 
 .advantage {
-    font-family: 'gothamMedium', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     text-transform: uppercase;
-    padding: 25px;
+    padding: 12px 0 0 25px;
 }
 
 .line {
@@ -376,7 +358,127 @@ main {
     max-width: 150%;
 }
 
+.main_team {
+    text-align: center;
+    background: #fff; 
+    color: #222222;
+}
 
+.main_team .letter {
+    color: #e2e2e2;
+    padding-top: 70px;
+}
+
+.main_team .caption {
+    margin-top: -175px;
+}
+
+.team_cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+}
+
+.team_photo img {
+    max-width: 100%;
+}
+
+.team_badge {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -40px;
+    background: white;
+    padding: 15px;
+    width: 215px;
+    height: 80px;
+    position: relative;
+    left: 20px;
+}
+
+.team_name {
+    font-size: 20px;
+    color: #11749e;
+}
+
+.team_position {
+    font-size: 15px;
+}
+
+.main_contacts {
+    text-align: center;
+    background: url(../img/bg3.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;    
+    padding-top: 90px;
+}
+
+.main_contacts .letter {
+    color: #5a5a5a;
+}
+
+.main_contacts .caption {
+    margin-top: -170px;
+}
+
+.form_inputs {
+    color: #fff;
+    margin-top: 150px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form_inputs input {
+    background: transparent;
+    width: 27%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.form_inputs input:not(:first-child) {
+    margin-left: 25px;
+}
+
+.message {
+    width: 94%;
+    height: 150px;
+    background: transparent;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 40px;
+    border: 1px solid #fff;
+}
+
+.button_submit {
+    width: 230px;
+    height: 65px;
+    background: #11749e;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 47px;
+    transition: all 0.3s;
+}
+
+.button_submit:hover {
+    background: #fff;
+    color: #11749e;
+}
+
+.main_map {
+    margin-top: 100px;
+}
+
+.footer {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    padding: 55px 0 55px 200px;
+    background: #222222;
+}
 
 
 
@@ -399,6 +501,14 @@ main {
     .news_block img {
         min-width: 100%;
     }
+
+    .message {
+        width: 1200px;
+    }
+
+    .form_inputs input {
+        width: 370px;
+    }
 }
 
 
@@ -418,10 +528,23 @@ main {
     .dark, .light {
         padding: 50px 100px;
     }
+    .team_cards {
+        grid-template-columns: auto auto;
+    }
 
-    
+    .team_badge {
+        left: 145px;
+    }
 
+    .form_inputs input {
+        width: 28%;
+    }
 
+    .message {
+        width: 93%;
+
+            
+        
 
 }
 
@@ -453,7 +576,6 @@ main {
 
     .actions {
         grid-template-columns: auto;
-        padding-bottom: ;
     }
 
     .action {
@@ -464,7 +586,10 @@ main {
         padding: 112px 0 100px 0;
     }
 
-                            
+    .team_badge {
+        left: 90px;
+    }
+            
 }
 
 @media screen and (max-width: 1020px) {
@@ -497,7 +622,7 @@ main {
     .topnav.responsive {
         position: relative;
         top: 50px;
-        left: -200px; 
+        left: -120px; 
     }
 
     header .topnav.responsive {
@@ -507,7 +632,7 @@ main {
     .topnav.responsive a.icon {
         position: absolute;
         top: -50px;
-        right: -200px;
+        right: -120px;
     }
 
     .topnav.responsive a {
@@ -533,11 +658,11 @@ main {
     }
 
     .main_features .caption {
-        margin-top: -90px;
+        margin-top: -110px;
     }
 
     .main_blog .caption {
-        margin-top: -85px;
+        margin-top: -105px;
     }
 
     .phone_elements {
@@ -557,6 +682,33 @@ main {
         max-width: 80%;
     }
 
+    .main_team .caption {
+        margin-top: -100px;
+    }
+
+    .team_badge {
+        left: 65px;
+    }
+
+    .main_contacts .caption {
+        margin-top: -100px;
+    }
+
+    .form_inputs input {
+        width: 93%;
+        margin-top: 40px;
+    }
+
+    .form_inputs input:not(:first-child) {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+    .team_badge {
+        left: 45px;
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -616,6 +768,19 @@ main {
         margin-right: 0;
     }
 
+    .team_cards {
+        grid-template-columns: auto;
+    }
+
+    .team_badge {
+        left: 130px;
+    }
+
+    .footer {
+        padding: 55px 0 55px 100px;
+    }
+    
+
 }
 
 @media screen and (max-width: 420px) {
@@ -626,4 +791,13 @@ main {
     .action img {
         margin: 100px 30px 0 0;
     }
+
+    .team_badge {
+        left: 20px;
+    }
+
+    .footer {
+        padding: 55px 0 55px 30px;
+    }
+
 }
