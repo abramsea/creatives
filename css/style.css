@@ -809,4 +809,24 @@ body {
         padding: 55px 0 55px 30px;
     }
 
+    .dark {
+        padding: 25px;
+    }
+    
+    .light {
+        padding: 25px;
+    }
+
+    .main_features .wrapper {
+        width: 100%;
+    }
+
+    .main_blog .wrapper {
+        width: 100%;
+    }
+
+    .feature_card {
+        margin: 0 10px;
+    }
+
 }
